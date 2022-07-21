@@ -1,0 +1,52 @@
+{
+  "name": "bitbucket",
+  "title": "bitbucket",
+  "description": "Integrates with BitBucket",
+  "icon": "command-icon.png",
+  "author": "michael.oates",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Show PRs",
+      "subtitle": "",
+      "description": "Show open pull requests",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "username",
+      "description": "Bitbucket Username",
+      "type": "textfield",
+      "required": true,
+      "title": "Username"
+    },
+    {
+      "name": "token",
+      "description": "API Token",
+      "type": "password",
+      "required": true,
+      "title": "BitBucket API Token"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.36.0",
+    "node-fetch": "^3.0.0",
+    "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "~16.10.0",
+    "@types/react": "^17.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "react-devtools": "^4.19.2",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop"
+  }
+}
